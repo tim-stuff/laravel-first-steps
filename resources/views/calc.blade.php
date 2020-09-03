@@ -2,7 +2,7 @@
     {{ csrf_field() }}
     <input placeholder="A" value="{{ $a }}" name="a" />
     <select name="action">
-        <option @if ($action == '+') selected="selected" @endif>+</option>
+
         <option @if ($action == '-') selected="selected" @endif>-</option>
         <option @if ($action == '*') selected="selected" @endif>*</option>
         <option @if ($action == '/') selected="selected" @endif>/</option>
@@ -11,5 +11,5 @@
     @if (isset($result))
         <strong>= {{ $result }}</strong>
     @endif
-    <button>Execute</button>
+    <button>Blexecute</button>
 </form>

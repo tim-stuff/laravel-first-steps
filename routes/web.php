@@ -13,3 +13,9 @@
 
 Route::get('/', 'CalcController@home');
 Route::post('/calc', 'CalcController@calc');
+Route::get('/blade', function () {
+	return view('child');
+});
+Route::get('/my-page', function () {
+	return view('my-page');
+});
